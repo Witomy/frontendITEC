@@ -1,5 +1,5 @@
 body{
-    background-color: #171C36;
+    background-color: #A30D1B;
     color: white;
 }
 
@@ -10,7 +10,7 @@ body{
     color: white;
 }
 .container{
-    background-color: #171C36;
+    background-color: #A30D1B;
 }
 
 .color{
@@ -18,21 +18,13 @@ body{
     text-decoration: none;
 }
 
-.navbar a:hover{
-    color: #2d50fe;
-}
-
-.navbar li a{
+.navbar a{
     color: white;
-    text-decoration: none;
-    border-radius: 10%;
-    width: 90px;
-    text-align-last: center;
-    margin: 5px;
+    margin: 0 5px;
 }
-
-.navbar li a:hover{
-    color: #2d50fe;
+.navbar a:hover{
+    color: #fc2525;
+    text-decoration: none;
 }
 
 .navbar button{
@@ -48,6 +40,10 @@ body{
     color: black;
 }
 
+.text-itec{
+    color: #fc2525;
+}
+
 .button1{
     color: white;
     border-radius: 25px;
@@ -58,7 +54,7 @@ body{
 
 .button1:hover{
     transition: 1s;
-    background-color: white;
+    background-color: rgb(210, 208, 208);
     color: black;
 
 }
