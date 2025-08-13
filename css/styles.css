@@ -47,8 +47,9 @@ body{
 .button1{
     color: white;
     border-radius: 25px;
+    border: 2px solid white;
     padding: 12px 20px;
-    background-color: #2d50fe;
+    background-color: #b80416;
     text-decoration: none;
 }
 
@@ -116,7 +117,7 @@ body{
 }
 
 .contacto{
-    background-color: #0F1224;
+    background-color: #df0a1f;
     padding: 20px;
     border-radius: 20px;
 
