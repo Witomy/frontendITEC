@@ -18,13 +18,10 @@ body{
     text-decoration: none;
 }
 
+
 .navbar a{
     color: white;
     margin: 0 5px;
-}
-.navbar a:hover{
-    color: #fc2525;
-    text-decoration: none;
 }
 
 .navbar button{
@@ -55,8 +52,8 @@ body{
 
 .button1:hover{
     transition: 1s;
-    background-color: rgb(210, 208, 208);
-    color: black;
+    background-color: rgb(217, 30, 30);
+    color: white;
 
 }
 
@@ -167,6 +164,11 @@ body{
 }
 
 .carreras-img:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+}
+
+.card:hover {
     transform: scale(1.02);
     transition: 0.8s;
 }

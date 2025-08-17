@@ -64,7 +64,7 @@
                         <a class="btn btn-primary my-3" href="#" role="button">Deseo más Información</a>
                     </div>
                 </div>
-                <div class="col-lg-6 ms-lg-5 mt-2">
+                <div class="col-lg-6 ms-lg-5 mt-5">
                     <div class="ratio ratio-16x9">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.6834134483051!2d-78.52283168441349!3d-7.15676152208191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25a56462a338b%3A0x8f3bda3aa53b002b!2sJos%C3%A9%20G%C3%A1lvez%20651%2C%20Cajamarca%2006001!5e0!3m2!1ses-419!2spe!4v1754687658903!5m2!1ses-419!2spe" 
                                 style="border:0;" 
@@ -81,34 +81,42 @@
                 </div>
                 <div class="col-lg-8 my-4">
                     <h3 class="my-4">Solicitar más información</h3>
-                    <form class="row mx-3 justify-content-center">
-                        <div class="col-lg-6">
+                    <form id="contactForm" action="https://formspree.io/f/xovlzwlv" method="POST" class="row g-3">
+                        <div class="col-md-6">
                             <label for="nombre" class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" id="nombre" required>
+                            <input type="text" name="nombre" class="form-control" id="nombre" required>
                         </div>
-                        <div class="col-lg-6">
+
+                        <div class="col-md-6">
                             <label for="correo" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="correo" required>
+                            <input type="email" name="email" class="form-control" id="correo" required>
                         </div>
-                        <div class="col-lg-6">
+
+                        <div class="col-md-6">
                             <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="telefono">
+                            <input type="tel" name="telefono" class="form-control" id="telefono" placeholder="+51 9xxxxxxxx">
                         </div>
-                        <div class="col-lg-6">
+
+                        <div class="col-md-6">
                             <label for="carrera" class="form-label">Carrera o curso de interés</label>
-                            <select class="form-select" id="carrera" required>
+                            <select name="carrera" id="carrera" class="form-select" required>
                                 <option value="">Selecciona una opción</option>
                                 <option value="Gastronomía">Gastronomía: Cocina</option>
-                                <option value="TTOEP">TTOEP (Transporte y Operación de Equipos Pesados)</option>
+                                <option value="TTOEP">TTOEP (Maquinaria Pesada)</option>
                                 <option value="Logística">Logística y Almacenes</option>
                                 <option value="Otro">Otro</option>
                             </select>
                         </div>
+
                         <div class="col-12">
                             <label for="mensaje" class="form-label">Mensaje o consulta</label>
-                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe aquí tu consulta o información adicional..." required></textarea>
+                            <textarea name="message" class="form-control" id="mensaje" rows="5" required></textarea>
                         </div>
-                        <div class="col-12 my-3">
+
+                        <!-- opcion: campo oculto para asunto -->
+                        <input type="hidden" name="_subject" value="Nueva consulta desde sitio IUCT">
+
+                        <div class="col-12 text-center mt-3">
                             <button type="submit" class="btn btn-primary">Enviar consulta</button>
                         </div>
                     </form>
@@ -178,6 +186,7 @@
         </div>
     </footer>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+    <script src="js/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
